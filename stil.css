@@ -1,0 +1,616 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Segoe UI", "sans-serif";
+  overflow-x: hidden;
+}
+
+html .componente,
+body .componente {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .componente .nav,
+body .componente .nav {
+  width: 100%;
+  min-width: 980px;
+  min-height: 82px;
+  height: 100px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5475bb), to(#3b5998));
+  background: linear-gradient(#5475bb, #3b5998);
+  border-bottom: 0.5px solid #3d3d3d;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html .componente .nav .nav-items,
+body .componente .nav .nav-items {
+  margin: 0 auto;
+  width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .componente .nav .nav-items h1,
+body .componente .nav .nav-items h1 {
+  color: #e6e6e6;
+  font-size: 40px;
+  letter-spacing: -1px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+html .componente .nav .nav-items form,
+body .componente .nav .nav-items form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .componente .nav .nav-items form label,
+body .componente .nav .nav-items form label {
+  color: white;
+  font-size: 12px;
+}
+
+html .componente .nav .nav-items form input,
+body .componente .nav .nav-items form input {
+  height: 20px;
+  border: 1px solid black;
+  margin: 4px 0;
+}
+
+html .componente .nav .nav-items form .name-form,
+body .componente .nav .nav-items form .name-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+html .componente .nav .nav-items form .pass-form,
+body .componente .nav .nav-items form .pass-form {
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .componente .nav .nav-items form .pass-form a,
+body .componente .nav .nav-items form .pass-form a {
+  text-decoration: none;
+  color: #b3c1ff;
+  font-size: 12px;
+}
+
+html .componente .nav .nav-items form .pass-form a:hover,
+body .componente .nav .nav-items form .pass-form a:hover {
+  text-decoration: underline;
+}
+
+html .componente .nav .nav-items form button,
+body .componente .nav .nav-items form button {
+  height: 22px;
+  width: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 15px;
+  margin-top: 4px;
+  font-size: 12px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background-color: #577ac7;
+  border: 1px solid #1f3e83;
+  cursor: pointer;
+  outline: none;
+  word-wrap: normal !important;
+}
+
+html .componente .nav .nav-items form button:hover,
+body .componente .nav .nav-items form button:hover {
+  background-color: #2a4e9c;
+}
+
+html .componente .nav .nav-items form button:active,
+body .componente .nav .nav-items form button:active {
+  position: relative;
+  top: 1px;
+}
+
+html .componente .continut,
+body .componente .continut {
+  min-height: 610px;
+  height: 100%;
+  min-width: 980px;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#d4d9ee));
+  background: linear-gradient(white, #d4d9ee);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html .componente .continut .obiecte-continut,
+body .componente .continut .obiecte-continut {
+  margin: 0 auto;
+  width: 980px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+html .componente .continut .obiecte-continut .prezentare,
+body .componente .continut .obiecte-continut .prezentare {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 100;
+  grid-row: 100%;
+  padding: 50px 0;
+  justify-self: flex-start;
+}
+
+html .componente .continut .obiecte-continut .prezentare h2,
+body .componente .continut .obiecte-continut .prezentare h2 {
+  color: #1f3e83;
+  font-size: 20px;
+}
+
+html .componente .continut .obiecte-continut .prezentare .imagine,
+body .componente .continut .obiecte-continut .prezentare .imagine {
+  margin-top: 20px;
+}
+
+html .componente .continut .obiecte-continut .prezentare .imagine img,
+body .componente .continut .obiecte-continut .prezentare .imagine img {
+  width: 100%;
+}
+
+html .componente .continut .obiecte-continut .formular,
+body .componente .continut .obiecte-continut .formular {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 100;
+  grid-row: 100%;
+  padding: 20px 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+html .componente .continut .obiecte-continut .formular form,
+body .componente .continut .obiecte-continut .formular form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .componente .continut .obiecte-continut .formular form input,
+html .componente .continut .obiecte-continut .formular form select,
+body .componente .continut .obiecte-continut .formular form input,
+body .componente .continut .obiecte-continut .formular form select {
+  outline: none;
+}
+
+html .componente .continut .obiecte-continut .formular form h1,
+body .componente .continut .obiecte-continut .formular form h1 {
+  font-size: 40px;
+  color: #3a3a3a;
+}
+
+html .componente .continut .obiecte-continut .formular form #easy,
+body .componente .continut .obiecte-continut .formular form #easy {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+html .componente .continut .obiecte-continut .formular form .inputs,
+body .componente .continut .obiecte-continut .formular form .inputs {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .componente .continut .obiecte-continut .formular form .inputs input,
+body .componente .continut .obiecte-continut .formular form .inputs input {
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #b3bac7;
+  margin: 5px 0;
+}
+
+html .componente .continut .obiecte-continut .formular form .inputs .row-inputs,
+body .componente .continut .obiecte-continut .formular form .inputs .row-inputs {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .componente .continut .obiecte-continut .formular form .inputs .row-inputs input,
+body .componente .continut .obiecte-continut .formular form .inputs .row-inputs input {
+  height: 25px;
+  width: 155px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #b3bac7;
+}
+
+html .componente .continut .obiecte-continut .formular form .birthday,
+body .componente .continut .obiecte-continut .formular form .birthday {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #8d8e9b;
+}
+
+html .componente .continut .obiecte-continut .formular form .selects,
+body .componente .continut .obiecte-continut .formular form .selects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 5px;
+}
+
+html .componente .continut .obiecte-continut .formular form .selects select,
+body .componente .continut .obiecte-continut .formular form .selects select {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+}
+
+html .componente .continut .obiecte-continut .formular form .selects .fa-question-circle,
+body .componente .continut .obiecte-continut .formular form .selects .fa-question-circle {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+  color: #575757;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+html .componente .continut .obiecte-continut .formular form .gender,
+body .componente .continut .obiecte-continut .formular form .gender {
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #8d8e9b;
+}
+
+html .componente .continut .obiecte-continut .formular form .genders,
+body .componente .continut .obiecte-continut .formular form .genders {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: 5px;
+}
+
+html .componente .continut .obiecte-continut .formular form .genders label,
+body .componente .continut .obiecte-continut .formular form .genders label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-weight: 500;
+  margin: 10px;
+}
+
+html .componente .continut .obiecte-continut .formular form .genders input,
+body .componente .continut .obiecte-continut .formular form .genders input {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+html .componente .continut .obiecte-continut .formular form .genders .fa-question-circle,
+body .componente .continut .obiecte-continut .formular form .genders .fa-question-circle {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+  color: #575757;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+html .componente .continut .obiecte-continut .formular form p,
+body .componente .continut .obiecte-continut .formular form p {
+  width: 320px;
+  font-size: 11px;
+  color: gray;
+}
+
+html .componente .continut .obiecte-continut .formular form p a,
+body .componente .continut .obiecte-continut .formular form p a {
+  text-decoration: none;
+  color: #4765a5;
+}
+
+html .componente .continut .obiecte-continut .formular form p a:hover,
+body .componente .continut .obiecte-continut .formular form p a:hover {
+  text-decoration: underline;
+}
+
+html .componente .continut .obiecte-continut .formular form button,
+body .componente .continut .obiecte-continut .formular form button {
+  width: 200px;
+  height: 38px;
+  margin: 20px 0;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #afd49f;
+          box-shadow: inset 0px 1px 0px 0px #afd49f;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #82b56a), to(#568a3c));
+  background: linear-gradient(to bottom, #82b56a 5%, #568a3c 100%);
+  border-radius: 4px;
+  border: 1px solid #3b6e22;
+  text-shadow: 1px 1px 0px #424242;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  outline: none;
+}
+
+html .componente .continut .obiecte-continut .formular form button:hover,
+body .componente .continut .obiecte-continut .formular form button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #8dc275), to(#609745));
+  background: linear-gradient(to bottom, #8dc275 5%, #609745 100%);
+}
+
+html .componente .continut .obiecte-continut .formular form button:active,
+body .componente .continut .obiecte-continut .formular form button:active {
+  position: relative;
+  top: 1px;
+}
+
+html .componente .continut .obiecte-continut .formular form .create-page,
+body .componente .continut .obiecte-continut .formular form .create-page {
+  color: #5a5a5a;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+html .componente .continut .obiecte-continut .formular form .create-page a,
+body .componente .continut .obiecte-continut .formular form .create-page a {
+  text-decoration: none;
+  color: #4765a5;
+}
+
+html .componente .continut .obiecte-continut .formular form .create-page a:hover,
+body .componente .continut .obiecte-continut .formular form .create-page a:hover {
+  text-decoration: underline;
+}
+
+html .componente .footer,
+body .componente .footer {
+  height: 117px;
+  min-width: 980px;
+  width: 100%;
+  font-size: 12px;
+  margin: 30px 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html .componente .footer .obiecte-footer,
+body .componente .footer .obiecte-footer {
+  width: 980px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html .componente .footer .obiecte-footer .lang,
+body .componente .footer .obiecte-footer .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .componente .footer .obiecte-footer .lang li,
+body .componente .footer .obiecte-footer .lang li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+html .componente .footer .obiecte-footer .lang li a,
+body .componente .footer .obiecte-footer .lang li a {
+  color: #4765a5;
+  text-decoration: none;
+}
+
+html .componente .footer .obiecte-footer .lang li a:hover,
+body .componente .footer .obiecte-footer .lang li a:hover {
+  text-decoration: underline;
+}
+
+html .componente .footer .obiecte-footer .lang .fa-plus-square,
+body .componente .footer .obiecte-footer .lang .fa-plus-square {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+}
+
+html .componente .footer .obiecte-footer .line,
+body .componente .footer .obiecte-footer .line {
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+  display: block;
+  margin: 8px 0;
+}
+
+html .componente .footer .obiecte-footer .facebook-stuff,
+body .componente .footer .obiecte-footer .facebook-stuff {
+  color: #4765a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .componente .footer .obiecte-footer .facebook-stuff li,
+body .componente .footer .obiecte-footer .facebook-stuff li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+html .componente .footer .obiecte-footer .facebook-stuff li a,
+body .componente .footer .obiecte-footer .facebook-stuff li a {
+  color: #4765a5;
+  text-decoration: none;
+}
+
+html .componente .footer .obiecte-footer .copyright,
+body .componente .footer .obiecte-footer .copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: grey;
+}
+/*# sourceMappingURL=stil.css.map */
