@@ -1,1 +1,671 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", "sans-serif";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html .ph::-webkit-input-placeholder,
+body .ph::-webkit-input-placeholder {
+  color: red;
+}
+
+html .ph:-ms-input-placeholder,
+body .ph:-ms-input-placeholder {
+  color: red;
+}
+
+html .ph::-ms-input-placeholder,
+body .ph::-ms-input-placeholder {
+  color: red;
+}
+
+html .ph::placeholder,
+body .ph::placeholder {
+  color: red;
+}
+
+html .container,
+body .container {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .container .nav,
+body .container .nav {
+  min-width: 980px;
+  min-height: 82px;
+  width: 100%;
+  height: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5475bb), to(#3b5998));
+  background: linear-gradient(#5475bb, #3b5998);
+  border-bottom: 0.5px solid #525252;
+}
+
+html .container .nav .nav-items,
+body .container .nav .nav-items {
+  margin: 0 auto;
+  width: 980px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+html .container .nav .nav-items h1,
+body .container .nav .nav-items h1 {
+  color: #dfdfdf;
+  font-size: 40px;
+  letter-spacing: -1px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+html .container .nav .nav-items form,
+body .container .nav .nav-items form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+html .container .nav .nav-items form label,
+body .container .nav .nav-items form label {
+  color: white;
+  font-size: 12px;
+}
+
+html .container .nav .nav-items form input,
+body .container .nav .nav-items form input {
+  height: 20px;
+  border: 1px solid black;
+  margin: 4px 0;
+}
+
+html .container .nav .nav-items form .email,
+body .container .nav .nav-items form .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+html .container .nav .nav-items form .password,
+body .container .nav .nav-items form .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 15px;
+}
+
+html .container .nav .nav-items form .password a,
+body .container .nav .nav-items form .password a {
+  color: #b3c1ff;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+html .container .nav .nav-items form .password a:hover,
+body .container .nav .nav-items form .password a:hover {
+  text-decoration: underline;
+}
+
+html .container .nav .nav-items form button,
+body .container .nav .nav-items form button {
+  width: 50px;
+  height: 22px;
+  margin-left: 15px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  background-color: #4c6fb9;
+  border: 1px solid #1f3e83;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px;
+}
+
+html .container .nav .nav-items form button:hover,
+body .container .nav .nav-items form button:hover {
+  background-color: #2a4e9c;
+}
+
+html .container .nav .nav-items form button:active,
+body .container .nav .nav-items form button:active {
+  position: relative;
+  top: 1px;
+}
+
+html .container .content,
+body .container .content {
+  min-width: 980px;
+  min-height: 610px;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(white), to(#d4d9ee));
+  background: linear-gradient(white, #d4d9ee);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html .container .content .content-items,
+body .container .content .content-items {
+  margin: 0 auto;
+  width: 980px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 100%;
+      grid-template-rows: 100%;
+}
+
+html .container .content .content-items .connection,
+body .container .content .content-items .connection {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding: 50px 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+html .container .content .content-items .connection h2,
+body .container .content .content-items .connection h2 {
+  font-size: 20px;
+  color: #1f3e83;
+}
+
+html .container .content .content-items .connection .connect-image,
+body .container .content .content-items .connection .connect-image {
+  margin-top: 20px;
+}
+
+html .container .content .content-items .connection .connect-image img,
+body .container .content .content-items .connection .connect-image img {
+  width: 100%;
+}
+
+html .container .content .content-items .signup-form,
+body .container .content .content-items .signup-form {
+  -ms-grid-column: 2;
+  grid-column: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  padding: 20px 0;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+html .container .content .content-items .signup-form form,
+body .container .content .content-items .signup-form form {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .container .content .content-items .signup-form form input,
+html .container .content .content-items .signup-form form select,
+body .container .content .content-items .signup-form form input,
+body .container .content .content-items .signup-form form select {
+  outline: none;
+}
+
+html .container .content .content-items .signup-form form h1,
+body .container .content .content-items .signup-form form h1 {
+  font-size: 40px;
+  color: #3d3d3d;
+}
+
+html .container .content .content-items .signup-form form h3,
+body .container .content .content-items .signup-form form h3 {
+  font-size: 22px;
+  font-weight: 400;
+  padding: 10px 0;
+}
+
+html .container .content .content-items .signup-form form .inputs,
+body .container .content .content-items .signup-form form .inputs {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .container .content .content-items .signup-form form .inputs input,
+body .container .content .content-items .signup-form form .inputs input {
+  height: 25px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #a5a5a5;
+  margin: 5px 0;
+}
+
+html .container .content .content-items .signup-form form .inputs .row,
+body .container .content .content-items .signup-form form .inputs .row {
+  width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+html .container .content .content-items .signup-form form .inputs .row input,
+body .container .content .content-items .signup-form form .inputs .row input {
+  width: 155px;
+}
+
+html .container .content .content-items .signup-form form #birth,
+body .container .content .content-items .signup-form form #birth {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #979797;
+}
+
+html .container .content .content-items .signup-form form .selects,
+body .container .content .content-items .signup-form form .selects {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .container .content .content-items .signup-form form .selects select,
+body .container .content .content-items .signup-form form .selects select {
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #a5a5a5;
+}
+
+html .container .content .content-items .signup-form form .selects .fa-question-circle,
+body .container .content .content-items .signup-form form .selects .fa-question-circle {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-left: 10px;
+  cursor: pointer;
+  color: #575757;
+}
+
+html .container .content .content-items .signup-form form #gender,
+body .container .content .content-items .signup-form form #gender {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #979797;
+}
+
+html .container .content .content-items .signup-form form .genders,
+body .container .content .content-items .signup-form form .genders {
+  margin-top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .container .content .content-items .signup-form form .genders label,
+body .container .content .content-items .signup-form form .genders label {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 10px;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+html .container .content .content-items .signup-form form .genders input,
+body .container .content .content-items .signup-form form .genders input {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+html .container .content .content-items .signup-form form .genders .fa-question-circle,
+body .container .content .content-items .signup-form form .genders .fa-question-circle {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  cursor: pointer;
+  color: #575757;
+}
+
+html .container .content .content-items .signup-form form .custom-genders,
+body .container .content .content-items .signup-form form .custom-genders {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+  display: none;
+}
+
+html .container .content .content-items .signup-form form .custom-genders select,
+body .container .content .content-items .signup-form form .custom-genders select {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+}
+
+html .container .content .content-items .signup-form form .custom-genders p,
+body .container .content .content-items .signup-form form .custom-genders p {
+  margin: 5px 0;
+  font-size: 12px;
+  width: 320px;
+  color: grey;
+}
+
+html .container .content .content-items .signup-form form .custom-genders input,
+body .container .content .content-items .signup-form form .custom-genders input {
+  height: 25px;
+  width: 340px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  font-size: 18px;
+}
+
+html .container .content .content-items .signup-form form #tc,
+body .container .content .content-items .signup-form form #tc {
+  width: 320px;
+  font-size: 11px;
+  color: grey;
+}
+
+html .container .content .content-items .signup-form form #tc a,
+body .container .content .content-items .signup-form form #tc a {
+  text-decoration: none;
+  color: #4765a5;
+}
+
+html .container .content .content-items .signup-form form #tc a:hover,
+body .container .content .content-items .signup-form form #tc a:hover {
+  text-decoration: underline;
+}
+
+html .container .content .content-items .signup-form form #sign-up-btn,
+body .container .content .content-items .signup-form form #sign-up-btn {
+  width: 200px;
+  height: 38px;
+  margin: 20px 0;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #82b56a), to(#568a3c));
+  background: linear-gradient(to bottom, #82b56a 5%, #568a3c 100%);
+  border-radius: 4px;
+  border: 1px solid #3b6e22;
+  -webkit-box-shadow: inset 0px 1px 0px 0px #afd49f;
+          box-shadow: inset 0px 1px 0px 0px #afd49f;
+  cursor: pointer;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 1px 1px #424242;
+  outline: none;
+}
+
+html .container .content .content-items .signup-form form #sign-up-btn:hover,
+body .container .content .content-items .signup-form form #sign-up-btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #8dc275), to(#609745));
+  background: linear-gradient(to bottom, #8dc275 5%, #609745 100%);
+}
+
+html .container .content .content-items .signup-form form #sign-up-btn:active,
+body .container .content .content-items .signup-form form #sign-up-btn:active {
+  position: relative;
+  top: 1px;
+}
+
+html .container .content .content-items .signup-form form #branding,
+body .container .content .content-items .signup-form form #branding {
+  font-size: 14px;
+  font-weight: 600;
+  color: grey;
+}
+
+html .container .content .content-items .signup-form form #branding a,
+body .container .content .content-items .signup-form form #branding a {
+  text-decoration: none;
+  color: #4765a5;
+}
+
+html .container .content .content-items .signup-form form #branding a:hover,
+body .container .content .content-items .signup-form form #branding a:hover {
+  text-decoration: underline;
+}
+
+html .container .footer,
+body .container .footer {
+  min-width: 980px;
+  width: 100%;
+  height: 117px;
+  font-size: 12px;
+  margin: 30px 0;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+html .container .footer .footer-items,
+body .container .footer .footer-items {
+  width: 980px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+html .container .footer .footer-items .lang,
+body .container .footer .footer-items .lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .container .footer .footer-items .lang li,
+body .container .footer .footer-items .lang li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+html .container .footer .footer-items .lang li a,
+body .container .footer .footer-items .lang li a {
+  text-decoration: none;
+  color: #4765a5;
+}
+
+html .container .footer .footer-items .lang li a:hover,
+body .container .footer .footer-items .lang li a:hover {
+  text-decoration: underline;
+}
+
+html .container .footer .footer-items #line,
+body .container .footer .footer-items #line {
+  height: 1px;
+  width: 100%;
+  background-color: #dbdbdb;
+  margin: 8px 0;
+}
+
+html .container .footer .footer-items .facebook-links,
+body .container .footer .footer-items .facebook-links {
+  color: #4765a5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+html .container .footer .footer-items .facebook-links li,
+body .container .footer .footer-items .facebook-links li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+html .container .footer .footer-items .facebook-links li a,
+body .container .footer .footer-items .facebook-links li a {
+  text-decoration: none;
+  color: #4765a5;
+}
+
+html .container .footer .footer-items .facebook-links li a:hover,
+body .container .footer .footer-items .facebook-links li a:hover {
+  text-decoration: underline;
+}
+
+html .container .footer .footer-items #copyright,
+body .container .footer .footer-items #copyright {
+  margin-top: 20px;
+  font-size: 12px;
+  color: grey;
+}
+/*# sourceMappingURL=style.css.map */
