@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./favicon.ico?" />
     <title>Facebook - log in or sign up</title>
-    <link rel="stylesheet" href="./stil.css" />
+    <link rel="stylesheet" href="./backup.css" />
     <script src="./fontawesome.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
   </head>
   <body>
     <div class="componente">
@@ -43,15 +44,17 @@
               <h3 id="easy">It's quick and easy.</h3>
               <div class="inputs">
                 <div class="row-inputs">
-                  <input type="text" placeholder="First name" />
-                  <input type="text" placeholder="Surname" />
+                  <input id="first" type="text" placeholder="First name" />
+                  <input id="surname" type="text" placeholder="Surname" />
                 </div>
                 <input
+                  id="email"
                   type="text"
                   placeholder="Mobile number or email address"
                   class="login-user"
                 />
                 <input
+                  id="pass"
                   type="password"
                   placeholder="New password"
                   class="form-password"
@@ -245,6 +248,24 @@
                   class="fas fa-question-circle"
                 ></i>
               </div>
+              <div class="custom-genders">
+                <select id="gender-select">
+                  <option id="opt" value="" disabled selected
+                    >Select your pronoun</option
+                  >
+                  <option value="she">"She: "Wish her a happy birthday!"</option
+                  ><option value="he">"He: "Wish him a happy birthday!"</option
+                  ><option value="they"
+                    >"They: "Wish them a happy birthday!"</option
+                  >
+                </select>
+                <p>Your pronoun is visible to everyone.</p>
+                <input
+                  type="text"
+                  id="opt-gender"
+                  placeholder="Gender (optional)"
+                />
+              </div>
               <p>
                 By clicking Sign Up, you agree to our
                 <a href="/terms">Terms</a> . Learn how we collect, use and share
@@ -255,8 +276,8 @@
               </p>
               <button type="submit">Sign Up</button>
               <h3 class="create-page">
-                <a href="/create-page">Create a Page</a> for a celebrity, band
-                or business.
+                <a href="/create">Create a Page</a> for a celebrity, band or
+                business.
               </h3>
             </form>
           </section>
@@ -306,7 +327,6 @@
             <li>
               <a href="https://ar-ar.facebook.com/" title="Arabic">العربية</a>
             </li>
-            <i title="Show more languages" class="far fa-plus-square"></i>
           </div>
           <span class="line"></span>
           <div class="facebook-stuff">
@@ -474,9 +494,97 @@
               >
             </li>
           </div>
-          <p class="copyright">Facebook &copy; 2020</p>
+          <p class="copyright"></p>
         </div>
       </div>
     </div>
+    <script>
+      $(document).ready(function () {
+        $("#other").click(function () {
+          $(".continut").css("min-height", "720px");
+          $(".custom-genders").css("display", "block");
+        });
+
+        $("#male").click(function () {
+          $(".continut").css("min-height", "610px");
+          $(".custom-genders").css("display", "none");
+        });
+
+        $("#female").click(function () {
+          $(".continut").css("min-height", "610px");
+          $(".custom-genders").css("display", "none");
+        });
+      });
+
+      let anCurent = new Date();
+      document.querySelector(".copyright").innerHTML =
+        `Facebook &copy; ` + anCurent.getFullYear();
+
+      const a = document
+        .querySelector("#first")
+        .addEventListener("blur", function (event) {
+          if (event.target.value === "") {
+            document.getElementById("first").style.border = "1px solid red";
+            document.getElementById("first").placeholder = "What's your name ?";
+            document.getElementById("first").classList.add("ph");
+          } else {
+            document.getElementById("first").style.border =
+              "1px solid rgb(179, 186, 199)";
+          }
+        });
+
+      const b = document
+        .querySelector("#surname")
+        .addEventListener("blur", function (event) {
+          if (event.target.value === "") {
+            document.getElementById("surname").style.border = "1px solid red";
+            document.getElementById("surname").placeholder =
+              "What's your surname ?";
+            document.getElementById("surname").classList.add("ph");
+          } else {
+            document.getElementById("surname").style.border =
+              "1px solid rgb(179, 186, 199)";
+          }
+        });
+
+      const c = document
+        .querySelector("#email")
+        .addEventListener("blur", function (event) {
+          if (event.target.value === "") {
+            document.getElementById("email").style.border = "1px solid red";
+            document.getElementById("email").placeholder =
+              "Type in your phone number or email address";
+            document.getElementById("email").classList.add("ph");
+          } else {
+            document.getElementById("email").style.border =
+              "1px solid rgb(179, 186, 199)";
+          }
+        });
+
+      const d = document
+        .querySelector("#pass")
+        .addEventListener("blur", function (event) {
+          if (event.target.value === "") {
+            document.getElementById("pass").style.border = "1px solid red";
+            document.getElementById("pass").placeholder = "Type a new password";
+            document.getElementById("pass").classList.add("ph");
+          } else {
+            document.getElementById("pass").style.border =
+              "1px solid rgb(179, 186, 199)";
+          }
+        });
+
+      const e = document
+        .querySelector("#gender-select")
+        .addEventListener("blur", function (event) {
+          if (event.target.value === "") {
+            document.getElementById("gender-select").style.border =
+              "1px solid red";
+          } else {
+            document.getElementById("gender-select").style.border =
+              "1px solid rgb(179, 186, 199)";
+          }
+        });
+    </script>
   </body>
 </html>

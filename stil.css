@@ -11,6 +11,26 @@ body {
   overflow-x: hidden;
 }
 
+html .ph::-webkit-input-placeholder,
+body .ph::-webkit-input-placeholder {
+  color: red;
+}
+
+html .ph:-ms-input-placeholder,
+body .ph:-ms-input-placeholder {
+  color: red;
+}
+
+html .ph::-ms-input-placeholder,
+body .ph::-ms-input-placeholder {
+  color: red;
+}
+
+html .ph::placeholder,
+body .ph::placeholder {
+  color: red;
+}
+
 html .componente,
 body .componente {
   height: 100%;
@@ -158,7 +178,6 @@ body .componente .nav .nav-items form button {
       -ms-grid-row-align: center;
       align-self: center;
   margin-left: 15px;
-  margin-top: 4px;
   font-size: 12px;
   text-align: center;
   font-weight: bold;
@@ -167,7 +186,6 @@ body .componente .nav .nav-items form button {
   border: 1px solid #1f3e83;
   cursor: pointer;
   outline: none;
-  word-wrap: normal !important;
 }
 
 html .componente .nav .nav-items form button:hover,
@@ -422,10 +440,54 @@ body .componente .continut .obiecte-continut .formular form .genders .fa-questio
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin-left: 10px;
   color: #575757;
   font-size: 16px;
   cursor: pointer;
+}
+
+html .componente .continut .obiecte-continut .formular form .custom-genders,
+body .componente .continut .obiecte-continut .formular form .custom-genders {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 10px 0;
+  display: none;
+}
+
+html .componente .continut .obiecte-continut .formular form .custom-genders select,
+body .componente .continut .obiecte-continut .formular form .custom-genders select {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  border: 1px solid #dadada;
+}
+
+html .componente .continut .obiecte-continut .formular form .custom-genders p,
+body .componente .continut .obiecte-continut .formular form .custom-genders p {
+  margin: 5px 0;
+  width: 320px;
+  font-size: 12px;
+  color: gray;
+}
+
+html .componente .continut .obiecte-continut .formular form .custom-genders input,
+body .componente .continut .obiecte-continut .formular form .custom-genders input {
+  height: 25px;
+  width: 340px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #b3bac7;
 }
 
 html .componente .continut .obiecte-continut .formular form p,
